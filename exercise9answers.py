@@ -13,7 +13,6 @@ from plotnine import *
 #data for fun
 
 crimes=pd.read_csv("crimes.txt", header=0, sep="\t")
-print crimes
 d=ggplot(crimes, aes(x='Population', y='Violent_crime'))
 d+geom_point()+geom_smooth(method = "lm")+ggtitle("Crime vs Population")
 
@@ -45,5 +44,5 @@ plt.xlabel('region')
 plt.ylabel('observations')
 plt.title('Bar graph of mean observations by region')
 
-ggplot(data2)+geom_jitter(aes(x="region", y="observations"))
+ggplot(data2)+geom_jitter(aes(x="region", y="observations"))+ggtitle("Jittered Data")
 
