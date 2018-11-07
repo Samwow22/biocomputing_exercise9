@@ -46,3 +46,7 @@ plt.title('Bar graph of mean observations by region')
 
 ggplot(data2)+geom_jitter(aes(x="region", y="observations"))+ggtitle("Jittered Data")
 
+
+#the graphs tell different stories, because the graph of just means makes the observations appera
+#similar but when the data is visualized the spread of the data is not equal. The south region especially
+#has a different range
